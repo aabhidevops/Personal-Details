@@ -3,31 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Anil Kamble Portfolio</title>
+    <title>Abhishek Anil Kamble</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Abhishek Anil Kamble</h1>
+        <h1>Hi, I'm <span id="dynamic-text"></span></h1>
         <p>DevOps Engineer | AWS Enthusiast | Linux Expert</p>
     </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <section id="about">
         <h2>About Me</h2>
         <p>I am a passionate DevOps engineer with expertise in AWS, CI/CD pipelines, Linux administration, and more.</p>
     </section>
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Linux, Apache, Nginx</li>
-            <li>AWS (EC2, S3, RDS, CloudFront)</li>
-            <li>DevOps Tools (Jenkins, Docker, Terraform)</li>
-            <li>Monitoring Tools (Grafana, New Relic)</li>
-        </ul>
+        <div class="skill">
+            <p>Linux</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>AWS</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>Docker</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+        </div>
     </section>
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: abhishek.kamble@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="response-message"></p>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

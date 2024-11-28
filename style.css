@@ -1,19 +1,52 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(120deg, #0073e6, #6c63ff);
+    background-size: 200% 200%;
+    animation: gradientMove 6s ease infinite;
     color: #333;
 }
 
+/* Header Styling */
 header {
     text-align: center;
     padding: 20px;
-    background: #0073e6;
+    background: rgba(0, 0, 0, 0.6);
     color: white;
 }
 
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Navigation Styling */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+/* Section Styling */
 section {
     margin: 20px auto;
     padding: 20px;
@@ -23,7 +56,56 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-a {
-    color: #0073e6;
-    text-decoration: none;
+h2 {
+    text-align: center;
+}
+
+/* Skills Section */
+.skill {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 20px;
+    background-color: #0073e6;
+    width: 0;
+    animation: load 2s forwards;
+}
+
+@keyframes load {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Gradient Animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
