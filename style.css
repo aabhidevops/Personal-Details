@@ -27,29 +27,10 @@ header h1 {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    position: relative;
-    transition: color 0.3s, padding 0.3s;
 }
 
 .links a:hover {
-    color: #4CAF50;
     text-decoration: underline;
-    padding-left: 10px;
-}
-
-.links a::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #4CAF50;
-    transition: width 0.3s;
-}
-
-.links a:hover::after {
-    width: 100%;
 }
 
 /* Section Titles */
@@ -85,7 +66,7 @@ h2 {
 
 .profile-picture {
     width: 100%;
-    height: 300px; /* Increased height */
+    height: 300px;  /* Adjusted for better profile picture visibility */
     object-fit: cover;
     border-radius: 5px;
 }
@@ -101,24 +82,33 @@ h2 {
     margin: 10px 0;
 }
 
-/* Family Details */
+/* Family Details and Partner Preference */
 #family-details, #partner-preference {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
 
-.family-picture, .partner-picture {
+#family-details .info-container, #partner-preference .info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#family-details .details, #partner-preference .details {
+    flex: 2;
+    padding: 20px;
+    max-width: 600px;
+}
+
+#family-details .family-picture, #partner-preference .partner-picture {
     width: 250px;
     height: auto;
     border-radius: 8px;
     margin-right: 20px;
-}
-
-.details p {
-    font-size: 1rem;
-    margin: 10px 0;
 }
 
 /* Footer */
