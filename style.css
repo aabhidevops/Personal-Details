@@ -49,6 +49,7 @@ h2 {
     justify-content: center;
     background-color: #e2e2e2;
     padding: 20px;
+    position: relative;
 }
 
 .info-container {
@@ -60,27 +61,22 @@ h2 {
 
 .image-container {
     flex: 1;
-    padding: 0;
+    padding: 20px;
     text-align: center;
-    height: 100%; /* Allow the image to take up the full height */
+    height: 100%;
 }
 
 .profile-picture {
     width: 100%;
-    height: 100%; /* Ensure it covers the height of the container */
-    object-fit: cover; /* Cover the entire container */
-    border-radius: 0; /* Keep the image rectangular */
+    height: 100%; /* Make the height 100% */
+    object-fit: cover; /* Ensures the image covers the area */
+    border-radius: 0; /* To keep it rectangular */
 }
 
 .details {
     flex: 2;
     padding: 20px;
     max-width: 600px;
-}
-
-.details p {
-    font-size: 1rem;
-    margin: 10px 0;
 }
 
 /* Family Details */
