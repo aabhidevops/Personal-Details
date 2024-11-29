@@ -67,7 +67,7 @@ h2 {
 .profile-picture {
     object-fit: cover;
     width: 100%;
-    height: 250px;
+    height: 300px;  /* Adjusted height to cover more area */
     border-radius: 50%;
 }
 
