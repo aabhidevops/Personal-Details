@@ -49,7 +49,6 @@ h2 {
     justify-content: center;
     background-color: #e2e2e2;
     padding: 20px;
-    position: relative;
 }
 
 .info-container {
@@ -63,14 +62,13 @@ h2 {
     flex: 1;
     padding: 20px;
     text-align: center;
-    height: 100%;
 }
 
 .profile-picture {
     width: 100%;
-    height: 100%; /* Make the height 100% */
-    object-fit: cover; /* Ensures the image covers the area */
-    border-radius: 0; /* To keep it rectangular */
+    height: 300px;  /* Adjusted for better profile picture visibility */
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .details {
@@ -79,31 +77,38 @@ h2 {
     max-width: 600px;
 }
 
-/* Family Details */
-#family-details {
+.details p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Family Details and Partner Preference */
+#family-details, #partner-preference {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
 
-.family-picture {
+#family-details .info-container, #partner-preference .info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#family-details .details, #partner-preference .details {
+    flex: 2;
+    padding: 20px;
+    max-width: 600px;
+}
+
+#family-details .family-picture, #partner-preference .partner-picture {
     width: 250px;
     height: auto;
     border-radius: 8px;
     margin-right: 20px;
-}
-
-/* Partner Preference */
-#partner-preference {
-    background-color: #f9f9f9;
-    padding: 20px;
-    text-align: center;
-}
-
-#partner-preference .details p {
-    font-size: 1rem;
-    margin: 10px 0;
 }
 
 /* Footer */
