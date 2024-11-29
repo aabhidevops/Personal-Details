@@ -13,19 +13,19 @@ header {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0; /* Reduced padding */
-    margin-bottom: 20px;
+    padding: 5px 0; /* Further reduced padding */
+    margin-bottom: 10px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2rem; /* Adjusted font size */
+    font-size: 1.8rem; /* Reduced font size */
 }
 
 /* Section Titles */
 h2 {
     color: #555;
-    margin: 20px 0;
+    margin: 10px 0; /* Reduced margin */
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
 }
@@ -34,8 +34,8 @@ h2 {
 .info-container {
     display: flex;
     align-items: center;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px; /* Reduced margin */
+    padding: 15px; /* Reduced padding */
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -43,7 +43,7 @@ h2 {
 }
 
 .profile-picture {
-    width: 200px; /* Increased size */
+    width: 300px; /* Increased size */
     height: auto;
     border-radius: 0; /* Rectangle shape */
     border: 2px solid #ccc;
@@ -51,7 +51,7 @@ h2 {
 }
 
 .family-picture {
-    width: 300px; /* Increased width for better visibility */
+    width: 300px; /* Adjusted size for consistency */
     height: auto;
     border-radius: 8px;
     border: 2px solid #ccc;
