@@ -1,9 +1,11 @@
-// Download PDF functionality
 document.getElementById('download-btn').onclick = function () {
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
-
+    
+    // Add title
     doc.text("Biodata of Abhishek Anil Kamble", 20, 20);
+    
+    // Add text content
     doc.text("Full Name: Abhishek Anil Kamble", 20, 30);
     doc.text("Date of Birth: 30 May 1996", 20, 40);
     doc.text("Height: 5'8\"", 20, 50);
@@ -33,5 +35,18 @@ document.getElementById('download-btn').onclick = function () {
     doc.text("Location Preference: Maharashtra", 20, 290);
     doc.text("Profession: Should be working", 20, 300);
 
-    doc.save("biodata.pdf");
+    // Adding Images
+    var img1 = new Image();
+    img1.src = 'images/profile.jpg';  // Provide image URL here
+
+    var img2 = new Image();
+    img2.src = 'images/family.JPG';  // Provide family image URL here
+
+    img1.onload = function() {
+        doc.addImage(img1, 'JPEG', 20, 310, 50, 50); // Adjust position and size
+        img2.onload = function() {
+            doc.addImage(img2, 'JPEG', 80, 310, 50, 50); // Adjust position and size
+            doc.save("biodata.pdf");
+        };
+    };
 };
