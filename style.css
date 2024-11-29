@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +8,7 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     background: #333;
     color: #fff;
@@ -15,7 +17,42 @@ header {
 }
 
 header h1 {
+    margin: 0;
     font-size: 2rem;
+}
+
+header .links {
+    margin-top: 10px;
+}
+
+header .links a {
+    color: #000; /* Black color for links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    background-color: #ddd; /* Light background */
+    border-radius: 5px;
+}
+
+header .links a:hover {
+    background-color: #bbb; /* Slightly darker background on hover */
+}
+
+/* Section Titles */
+h2 {
+    color: #555;
+    margin: 20px 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Personal Information */
+#personal-info {
+    position: relative;
+    height: auto;
+    background-color: #e2e2e2;
+    padding: 20px 0;
 }
 
 .info-container {
@@ -27,16 +64,42 @@ header h1 {
 
 .image-container {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .profile-picture {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    border: 2px solid #ccc;
 }
 
 .details {
     flex: 2;
     margin-left: 20px;
     max-width: 600px;
+}
+
+/* Family Details */
+.family-picture {
+    width: 200px; /* Reduced size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    margin-right: 20px;
+}
+
+/* Partner Preference Details */
+.details p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
 }
