@@ -13,13 +13,13 @@ header {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 5px 0; /* Reduced padding */
+    padding: 5px 0;
     margin-bottom: 10px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.5rem; /* Reduced font size for "Biodata" */
+    font-size: 1.5rem;
 }
 
 /* Header Links */
@@ -28,23 +28,23 @@ header .links {
 }
 
 header .links a {
-    color: #fff;
+    color: #000; /* Black color for the links */
     text-decoration: none;
     margin: 0 10px;
     font-size: 0.9rem;
     padding: 5px 10px;
-    background-color: #555;
+    background-color: #ddd;
     border-radius: 5px;
 }
 
 header .links a:hover {
-    background-color: #777;
+    background-color: #bbb; /* Slightly darker background on hover */
 }
 
 /* Section Titles */
 h2 {
     color: #555;
-    margin: 10px 0; /* Reduced margin */
+    margin: 10px 0;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
 }
@@ -52,8 +52,8 @@ h2 {
 /* Personal Information */
 #personal-info {
     position: relative;
-    height: 350px; /* Set a fixed height */
-    background-color: #e2e2e2; /* Light background for contrast */
+    height: 350px;
+    background-color: #e2e2e2;
 }
 
 .info-container {
@@ -74,9 +74,9 @@ h2 {
 
 .profile-picture {
     object-fit: cover;
-    width: 100%; /* Ensure it fills the space */
-    height: 100%; /* Make the image fill the full container */
-    border-radius: 0; /* Rectangle shape */
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
     border: 2px solid #ccc;
 }
 
@@ -88,7 +88,7 @@ h2 {
 
 /* Family Details */
 .family-picture {
-    width: 300px; /* Adjusted size */
+    width: 300px;
     height: auto;
     border-radius: 8px;
     border: 2px solid #ccc;
