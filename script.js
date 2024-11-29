@@ -13,13 +13,13 @@ header {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 5px 0; /* Further reduced padding */
+    padding: 5px 0; /* Reduced padding */
     margin-bottom: 10px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.8rem; /* Reduced font size */
+    font-size: 1.5rem; /* Reduced font size for "Biodata" */
 }
 
 /* Section Titles */
@@ -30,37 +30,50 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* Personal Information and Family Details */
+/* Personal Information */
+#personal-info {
+    position: relative;
+    height: 350px; /* Set a fixed height */
+    background-color: #e2e2e2; /* Light background for contrast */
+}
+
 .info-container {
     display: flex;
     align-items: center;
-    margin: 10px; /* Reduced margin */
-    padding: 15px; /* Reduced padding */
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    height: 100%;
+    padding: 15px;
+}
+
+.image-container {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .profile-picture {
-    width: 300px; /* Increased size */
-    height: auto;
+    object-fit: cover;
+    width: 100%; /* Ensure it fills the space */
+    height: 100%; /* Make the image fill the full container */
     border-radius: 0; /* Rectangle shape */
     border: 2px solid #ccc;
-    margin-right: 20px;
 }
 
+.details {
+    flex: 2;
+    margin-left: 20px;
+    max-width: 600px;
+}
+
+/* Family Details */
 .family-picture {
-    width: 300px; /* Adjusted size for consistency */
+    width: 300px; /* Adjusted size */
     height: auto;
     border-radius: 8px;
     border: 2px solid #ccc;
     margin-right: 20px;
-}
-
-/* Text Details */
-.details {
-    max-width: 600px;
 }
 
 /* Footer */
