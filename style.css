@@ -1,68 +1,87 @@
-/* General Styling */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #f4f4f9, #d6eaff);
+    line-height: 1.6;
+    background-color: #f4f4f9;
     color: #333;
 }
 
-/* Header Styling */
+/* Header */
 header {
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    background: #0073e6;
-    color: white;
-    font-size: 2em;
+    padding: 3px 0; /* Further reduced padding */
+    margin-bottom: 10px;
 }
 
-/* Section Styling */
-section {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header h1 {
+    margin: 0;
+    font-size: 1.2rem; /* Reduced font size for "BIO" */
+    font-weight: bold; /* Keeps emphasis despite smaller size */
 }
 
+/* Section Titles */
 h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #0073e6;
+    color: #555;
+    margin: 8px 0; /* Reduced margin */
+    border-bottom: 1px solid #ddd; /* Thinner border */
+    padding-bottom: 3px;
 }
 
-/* Info Container */
+/* Personal Information */
+#personal-info {
+    position: relative;
+    height: 300px; /* Reduced height */
+    background-color: #e2e2e2; /* Light background for contrast */
+}
+
 .info-container {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    height: 100%;
+    padding: 10px; /* Reduced padding */
+}
+
+.image-container {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-picture {
+    object-fit: cover;
+    width: 90%; /* Slightly smaller width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded shape for aesthetics */
+    border: 1px solid #ccc; /* Thinner border */
 }
 
 .details {
-    flex: 1;
+    flex: 2;
+    margin-left: 15px; /* Reduced spacing */
+    max-width: 550px; /* Slightly reduced width */
 }
 
-.details p {
-    margin: 5px 0;
-    font-size: 1em;
-}
-
-/* Profile Picture */
-.profile-picture, .family-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Family Details */
+.family-picture {
+    width: 250px; /* Further adjusted size */
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-right: 15px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background: #0073e6;
-    color: white;
-    margin-top: 20px;
+    background: #333;
+    color: #fff;
+    padding: 8px 0; /* Reduced padding */
+    margin-top: 15px;
 }
