@@ -60,16 +60,16 @@ h2 {
 
 .image-container {
     flex: 1;
-    padding: 20px;
+    padding: 0;
     text-align: center;
+    height: 100%; /* Allow the image to take up the full height */
 }
 
 .profile-picture {
-    object-fit: cover;
     width: 100%;
-    height: 100%;
-    max-height: 300px; /* Adjust height as needed */
-    border-radius: 0;  /* Set to 0 to remove rounding */
+    height: 100%; /* Ensure it covers the height of the container */
+    object-fit: cover; /* Cover the entire container */
+    border-radius: 0; /* Keep the image rectangular */
 }
 
 .details {
