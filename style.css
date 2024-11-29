@@ -69,7 +69,7 @@ h2 {
     height: 300px;
     object-fit: cover;
     border-radius: 5px;
-    border: 5px solid #1E90FF; /* Blue border for profile image */
+    /* Removed the blue border from profile image */
 }
 
 .details {
@@ -110,7 +110,7 @@ h2 {
     height: auto;
     border-radius: 8px;
     margin-right: 20px;
-    /* Removed the blue border */
+    /* No blue border for family and partner pictures */
 }
 
 /* Footer */
