@@ -1,4 +1,3 @@
-// Wait for the DOM to fully load
 document.addEventListener("DOMContentLoaded", () => {
     // Add hover effect for profile picture
     const profilePicture = document.querySelector('.profile-picture');
@@ -12,17 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
         profilePicture.addEventListener('mouseout', () => {
             profilePicture.style.border = "2px solid #ccc";
             profilePicture.style.transform = "scale(1)";
-        });
-    }
-
-    // Highlight partner preferences on click
-    const partnerPreferences = document.querySelector('#partner-preference');
-    if (partnerPreferences) {
-        partnerPreferences.addEventListener('click', () => {
-            partnerPreferences.style.backgroundColor = "#e2e8f0";
-            setTimeout(() => {
-                partnerPreferences.style.backgroundColor = "";
-            }, 1500); // Reset after 1.5 seconds
         });
     }
 
