@@ -6,7 +6,6 @@ body {
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
-    animation: fadeIn 0.5s ease-in-out;
 }
 
 /* Header */
@@ -25,14 +24,13 @@ header h1 {
 
 .links a {
     margin: 0 15px;
-    color: #1E90FF;
+    color: #1E90FF; /* Blue color for LinkedIn */
     text-decoration: none;
     font-weight: bold;
 }
 
-.links a:hover, .links a:focus {
+.links a:hover {
     text-decoration: underline;
-    outline: none;
 }
 
 /* Section Titles */
@@ -41,32 +39,78 @@ h2 {
     margin: 20px 0;
     padding-bottom: 5px;
     border-bottom: 2px solid #ddd;
-    letter-spacing: 1px;
 }
 
-/* Section Styling */
-#personal-info, #family-details, #partner-preference {
+/* Personal Information */
+#personal-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2e2e2;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 800px;
 }
 
-/* Images */
-.profile-picture, .family-picture {
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Details Section */
+.image-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    /* Removed the blue border from profile image */
+}
+
+.details {
+    flex: 2;
+    padding: 20px;
+    max-width: 600px;
+}
+
 .details p {
     font-size: 1rem;
     margin: 10px 0;
+}
+
+/* Family Details and Partner Preference */
+#family-details, #partner-preference {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#family-details .info-container, #partner-preference .info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#family-details .details, #partner-preference .details {
+    flex: 2;
+    padding: 20px;
+    max-width: 600px;
+}
+
+#family-details .family-picture, #partner-preference .partner-picture {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    /* No blue border for family and partner pictures */
 }
 
 /* Footer */
@@ -78,18 +122,18 @@ footer {
     margin-top: 30px;
 }
 
-#scroll-to-top {
+button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 /* Media Queries */
@@ -98,16 +142,12 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-}
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+    .details {
+        max-width: 100%;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    .family-picture {
+        width: 200px;
     }
 }
